@@ -1,0 +1,40 @@
+General Registration
+
+<Candidate>
+----------------------------
+ID
+Name
+Email
+Phone
+College
+moneyPaid(default=DefaultAmount)
+
+Event Class
+-------------------------------
+<Event>
+ID
+Name
+maxParticipantInATeam
+minPaticipantInATeam
+HeadCoordinatorName
+HeadCoordinatoeEmail
+AdminPassword
+participationCharge
+
+Team Registration For Event
+------------------------------
+<Team>
+ID
+Name
+list[Candidate.ID,]
+Event.ID
+moneyPaid(default=Event.ParticipationCharge)
+isParticipated(default=False)
+Score(default=null)
+
+
+
+
+
+
+
